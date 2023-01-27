@@ -1,0 +1,236 @@
+* {
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: manrope;
+}
+
+.loginform {
+    /* background: rgb(201, 216, 255); */
+    background: linear-gradient(45deg,
+            #ffab9133 0%,
+            #ffab9133 80%);
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loginform-wrapper {
+        background: #ffffff;
+        border-radius: 5px;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+
+    }
+
+    .cardLeft {
+        background: linear-gradient(45deg,
+                #fff5f0 0%,
+                #ffab91 100%);
+        border-radius: 5px;
+        height: 40rem;
+        position: relative;
+
+        .cardleftBg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+
+        }
+
+        .innerImage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+
+            .innerBg {
+                width: 70%;
+                padding: 3rem 1rem;
+                z-index: 1;
+                background: rgba(255, 255, 255, 0.15);
+                border-radius: 5px;
+                backdrop-filter: blur(3.8px);
+            }
+        }
+    }
+
+    .cardRight {
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .formControl {
+            width: 60%;
+
+            .brandIcon {
+                img {
+                    width: 20%;
+                }
+            }
+
+            .subtile {
+                font-size: .95rem;
+            }
+
+            .loginInputs {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+
+                .input-group {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    width: 100%;
+
+                    label {
+                        font-size: 15px;
+                        font-weight: 600;
+                    }
+
+                    .input {
+                        width: 100%;
+                        border: 1px solid #ccc;
+                        padding: 8px 20px;
+                        border-radius: 5px !important;
+                        font-size: 0.9rem;
+
+                        &:focus {
+                            border: 1px solid #ffab91 !important;
+                            outline: 1px solid #ffab91 !important;
+                        }
+
+                        &::placeholder {
+                            font-size: 0.9rem;
+                        }
+                    }
+                }
+
+                .form-check {
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    gap: 10px;
+
+
+
+                    .checkboxside {
+                        input {
+                            width: 1rem;
+                            height: 1rem;
+
+                            &[type=checkbox] {
+                                accent-color: #ffab91;
+                            }
+                        }
+
+                        label {
+                            font-size: 0.95rem;
+                            padding-left: 0.4rem !important;
+                        }
+                    }
+
+
+                    .forgotpasswordLink {
+                        a {
+                            text-decoration: none;
+                            color: red;
+                            font-weight: 700;
+                            font-size: 0.85rem;
+                        }
+                    }
+
+
+                }
+
+                .divider {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 10px;
+                    width: 100%;
+                    font-weight: 800;
+                    color: rgba(34, 34, 34, 0.388);
+
+                    hr {
+                        border: 1px solid rgba(34, 34, 34, 0.388);
+                        width: inherit;
+                    }
+                }
+
+                .btnarea {
+                    width: 100%;
+
+                    .btn-login {
+                        width: 100%;
+                        border-radius: 5px !important;
+                        background-color: #ffab91;
+                        color: white;
+                        border: none;
+                        padding: 5px;
+                    }
+
+                    .btn-register {
+                        width: 100%;
+                        border-radius: 5px !important;
+                        background-color: #ffffff;
+                        color: #ccc;
+                        border: 1px solid #ccc;
+                        padding: 5px;
+
+                        &:hover {
+                            border: 1px solid #fff;
+                            background-color: #ffab91;
+                            color: white;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 576px) {
+    .loginform {
+        background: linear-gradient(45deg,
+                #CAF7AD 0%,
+                #FBF6C9 100%);
+
+        .loginform-wrapper {
+            background: transparent;
+            width: 90%;
+            z-index: 1;
+            background: #ffffffd0;
+            border-radius: 5px;
+            box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+            backdrop-filter: blur(3.8px);
+
+            .cardRight {
+                padding: 1.5rem;
+
+                .formControl {
+                    width: 100%;
+
+                    .title {
+                        font-size: 1.1rem;
+                    }
+
+                    .subtile {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+}

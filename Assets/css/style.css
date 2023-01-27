@@ -1,0 +1,193 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  font-family: manrope;
+}
+
+.loginform {
+  /* background: rgb(201, 216, 255); */
+  background: linear-gradient(45deg, rgba(255, 171, 145, 0.2) 0%, rgba(255, 171, 145, 0.2) 80%);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginform .loginform-wrapper {
+  background: #ffffff;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.loginform .cardLeft {
+  background: linear-gradient(45deg, #fff5f0 0%, #ffab91 100%);
+  border-radius: 5px;
+  height: 40rem;
+  position: relative;
+}
+.loginform .cardLeft .cardleftBg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.loginform .cardLeft .innerImage {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.loginform .cardLeft .innerImage .innerBg {
+  width: 70%;
+  padding: 3rem 1rem;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 5px;
+  -webkit-backdrop-filter: blur(3.8px);
+          backdrop-filter: blur(3.8px);
+}
+.loginform .cardRight {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loginform .cardRight .formControl {
+  width: 60%;
+}
+.loginform .cardRight .formControl .brandIcon img {
+  width: 20%;
+}
+.loginform .cardRight .formControl .subtile {
+  font-size: 0.95rem;
+}
+.loginform .cardRight .formControl .loginInputs {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.loginform .cardRight .formControl .loginInputs .input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+}
+.loginform .cardRight .formControl .loginInputs .input-group label {
+  font-size: 15px;
+  font-weight: 600;
+}
+.loginform .cardRight .formControl .loginInputs .input-group .input {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding: 8px 20px;
+  border-radius: 5px !important;
+  font-size: 0.9rem;
+}
+.loginform .cardRight .formControl .loginInputs .input-group .input:focus {
+  border: 1px solid #ffab91 !important;
+  outline: 1px solid #ffab91 !important;
+}
+.loginform .cardRight .formControl .loginInputs .input-group .input::-moz-placeholder {
+  font-size: 0.9rem;
+}
+.loginform .cardRight .formControl .loginInputs .input-group .input:-ms-input-placeholder {
+  font-size: 0.9rem;
+}
+.loginform .cardRight .formControl .loginInputs .input-group .input::placeholder {
+  font-size: 0.9rem;
+}
+.loginform .cardRight .formControl .loginInputs .form-check {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.loginform .cardRight .formControl .loginInputs .form-check .checkboxside input {
+  width: 1rem;
+  height: 1rem;
+}
+.loginform .cardRight .formControl .loginInputs .form-check .checkboxside input[type=checkbox] {
+  accent-color: #ffab91;
+}
+.loginform .cardRight .formControl .loginInputs .form-check .checkboxside label {
+  font-size: 0.95rem;
+  padding-left: 0.4rem !important;
+}
+.loginform .cardRight .formControl .loginInputs .form-check .forgotpasswordLink a {
+  text-decoration: none;
+  color: red;
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+.loginform .cardRight .formControl .loginInputs .divider {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  font-weight: 800;
+  color: rgba(34, 34, 34, 0.388);
+}
+.loginform .cardRight .formControl .loginInputs .divider hr {
+  border: 1px solid rgba(34, 34, 34, 0.388);
+  width: inherit;
+}
+.loginform .cardRight .formControl .loginInputs .btnarea {
+  width: 100%;
+}
+.loginform .cardRight .formControl .loginInputs .btnarea .btn-login {
+  width: 100%;
+  border-radius: 5px !important;
+  background-color: #ffab91;
+  color: white;
+  border: none;
+  padding: 5px;
+}
+.loginform .cardRight .formControl .loginInputs .btnarea .btn-register {
+  width: 100%;
+  border-radius: 5px !important;
+  background-color: #ffffff;
+  color: #ccc;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+.loginform .cardRight .formControl .loginInputs .btnarea .btn-register:hover {
+  border: 1px solid #fff;
+  background-color: #ffab91;
+  color: white;
+}
+
+@media (max-width: 576px) {
+  .loginform {
+    background: linear-gradient(45deg, #CAF7AD 0%, #FBF6C9 100%);
+  }
+  .loginform .loginform-wrapper {
+    background: transparent;
+    width: 90%;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.8156862745);
+    border-radius: 5px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    -webkit-backdrop-filter: blur(3.8px);
+            backdrop-filter: blur(3.8px);
+  }
+  .loginform .loginform-wrapper .cardRight {
+    padding: 1.5rem;
+  }
+  .loginform .loginform-wrapper .cardRight .formControl {
+    width: 100%;
+  }
+  .loginform .loginform-wrapper .cardRight .formControl .title {
+    font-size: 1.1rem;
+  }
+  .loginform .loginform-wrapper .cardRight .formControl .subtile {
+    font-size: 0.7rem;
+  }
+}/*# sourceMappingURL=style.css.map */
